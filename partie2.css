@@ -1,0 +1,111 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Utiliser min-height au lieu de height */
+}
+
+header {
+     background-color: #3b3b3b;
+    padding: 15px;
+    color: #696969;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    background: linear-gradient(to right, #ff7f50, #ff4e00); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul.btn-box {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul.btn-box li {
+    margin: 0;
+}
+
+nav ul.btn-box a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px; /* Ajuster la taille du bouton */
+    border-radius: 8px;
+    background: #001f3f; /* Couleur principale du bouton */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul.btn-box a:hover {
+    background-color: #003366; /* Couleur au survol */
+    color: #fff;
+}
+
+main {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.professional-objective {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.A-PROPOS {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+

@@ -1,0 +1,137 @@
+<html>
+    <style>
+        
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #3498db, #2ecc71); /
+            margin: 0;
+            padding: 0;
+            color: #fff
+          
+        }
+
+        header {
+            background-color: rgb(194, 248, 236);
+            color: rgb(64, 36, 36);
+            text-align: center;
+            padding: 1em;
+            
+        }
+
+        nav {
+            background-color: rgb(159, 242, 225);
+            padding: 1em;
+            
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(51, 141, 214);
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #eee;
+        }
+        img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+
+        
+    </style>  
+    <tr>
+       
+        <br>
+        <hr>
+        <table>
+            <tr>   
+        <td><img src="image/tayeb.png" widh="100" height="100"></td>
+         <td> 
+            <hr>
+            <h1> tayeb ben khadhra  </h1>
+         </td>
+         </tr>
+        </table>
+<head>
+    
+</head>        
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tayeb ben khadhra - Contact</title>
+</head>
+<body>
+    <centre>
+        <fieldset>
+    <header>
+        
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href ="accueil.html" style="color: rgb(51, 141, 214);">accueil</a></li>
+        <li><a href ="parcours.html" style="color: rgb(51, 141, 214);">parcours academiques</a></li>
+<li>   <a href ="contact.html" style="color: rgb(51, 141, 214);">contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Contactez-moi</h2>
+        <hr>
+        <p>N'hesitez pas a me contacter pour toute question ou opportunite.</p>
+        <table>
+        <form action="traitement_formulaire.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <br><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br><br>
+            <label for="telephone">Telephone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Votre numero de telephone">
+            <br><br>
+            
+        
+        <div class="informations-contact">
+            <h2>Retrouvez-moi sur :</h2>
+            <p>Numero de telephone : <a href="tel:+123456789">+216 28139677</a></p>
+        </div>
+        <br><br>
+        <td colspan="2">
+            <input type="submit" id="submit" value="Envoyer"></td>
+        </form>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 tayeb ben khadhra - Portfolio</p>
+    </footer>
+        </fieldset>
+</centre>
+</body>
+</html>
