@@ -1,14 +1,13 @@
 <html>
-    <style>
-        
 
+<head>
+    <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #3498db, #2ecc71); /
+            background: linear-gradient(to right, #3498db, #2ecc71);
             margin: 0;
             padding: 0;
-            color: #fff
-          
+            color: #fff;
         }
 
         header {
@@ -16,14 +15,13 @@
             color: rgb(64, 36, 36);
             text-align: center;
             padding: 1em;
-            
         }
 
         nav {
             background-color: #e8dfdf;
             padding: 1em;
-            
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -40,7 +38,7 @@
             padding: 10px 20px;
             text-decoration: none;
             color: rgb(51, 141, 214);
-            background-color: blue;
+            background-color: rgb(204, 204, 243);
             border: 1px solid #daa4a4;
             border-radius: 5px;
             transition: background-color 0.3s ease;
@@ -49,70 +47,88 @@
         nav a:hover {
             background-color: #eee;
         }
+
         img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
-    </style>  
-    <head>
-        <title>accueil</title>
-        <meta charset="UTF8">
- </head>
-    <body>
-        <header> 
-              
-                
+    </style>
+    <title>Accueil</title>
+    <meta charset="UTF8">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html" style="color: rgb(51, 141, 214);">Accueil</a></li>
+                <li><a href="parcours.html" style="color: rgb(51, 141, 214);">Parcours academiques</a></li>
+                <li><a href="contact.html" style="color: rgb(51, 141, 214);">Contact</a></li>
+                <li><a href="portfolio.html" style="color: rgb(51, 141, 214);">portfolio</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Breve description de mon portfolio.</p>
+        </section>
+        <br>
+        <hr>
+        <table>
             <tr>
-            <a href ="accueil.html" style="color:  rgb(51, 141, 214);">accueil</a>
-            <a href ="parcours.html" style="color: rgb(51, 141, 214);">parcours academiques</a>
-            <a href ="contact.html" style="color: rgb(51, 141, 214);">contact</a>
-            <section>
-                <h2>Bienvenue sur mon portfolio</h2>
-                <p>Breve description de mon portfolio.</p>
-            </section>
-            <br>
-            <hr>
-            
-            <table>
-                        <tr>
-                             <td>
-                            <img src="image/tayeb.png" witdth="100" height="100" alt="image réduite">
-                        </td>
-                
-                            <td><p> Je suis Taieb Ben Khadhra, étudiant de 22 ans en 1re année d'ingénierie informatique.
-                                 Je me consacre à apprendre, relever des défis et m'investir pleinement dans mes projets.
-                                  Ma rapidité à assimiler de nouvelles technologies témoigne de ma détermination et de ma passion pour ce domaine.
+                <td>
+                    <img src="image/tayeb.png" width="100" height="100" alt="image réduite">
+                </td>
+                <td>
+                    <p> Je suis Taieb Ben Khadhra, étudiant de 22 ans en 1re année d'ingénierie informatique.
+                        Je me consacre à apprendre, relever des défis et m'investir pleinement dans mes projets.
+                        Ma rapidité à assimiler de nouvelles technologies témoigne de ma détermination et de ma passion pour ce domaine.
                     </p>
-                    </td>
-                    </tr>
-            </table>
-            <h2>
-                Competences
-            </h2>
-            <table>
-                <p>
-                -python
+                </td>
+            </tr>
+        </table>
+        <h2>
+            Competences
+        </h2>
+        <table>
+            <p>
+                - Python
             </p>
             <p>
-                -programmation C 
+                - Programmation C
             </p>
             <p>
-                -proteus isis
-            </p><p>
-                -Pascal
-                </p>
+                - Proteus ISIS
+            </p>
+            <p>
+                - Pascal
+            </p>
+        </table>
+        <h2>
+            Langue :
+        </h2>
+        <table>
+            <p>
+                - Francais
+            </p>
+            <p>
+                - Anglais
+            </p>
+        </table>
+    </header>
+
+    <script>
         
-            </table>
-            <h2>
-                langue :
-            </h2>
-            <table>
-                <p>
-                -Francais
-            </p>
-                -Englais
-            
-            </table>
+        function toggleAcademicSection() {
+            var academicSection = document.getElementById("academicSection");
+            if (academicSection.style.display === "none" || academicSection.style.display === "") {
+                academicSection.style.display = "block";
+            } else {
+                academicSection.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

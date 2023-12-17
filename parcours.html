@@ -1,14 +1,14 @@
-<html >
-    <style>
-        
+<!DOCTYPE html>
+<html>
 
+<head>
+    <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #3498db, #2ecc71); /
+            background: linear-gradient(to right, #3498db, #2ecc71);
             margin: 0;
             padding: 0;
-            color: #fff
-          
+            color: #fff;
         }
 
         header {
@@ -17,14 +17,13 @@
             text-align: center;
             padding: 1em;
             margin-bottom: 20px;
-            
         }
 
         nav {
             background-color: #e8dfdf;
             padding: 1em;
-            
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -50,6 +49,7 @@
         nav a:hover {
             background-color: #eee;
         }
+
         .profile-section {
             text-align: center;
             margin-bottom: 20px;
@@ -76,7 +76,8 @@
             margin-top: 10px;
         }
 
-        .academic-section td, .academic-section th {
+        .academic-section td,
+        .academic-section th {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
@@ -85,36 +86,35 @@
         .academic-section th {
             background-color: #f2f2f2;
         }
+
         img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+    </style>
+</head>
 
-
-        
-    </style>  
-<head>
+<body>
     <tr>
-        
         <br>
         <hr>
         <table>
-            <tr>   
-        <td><img src="image/tayeb.png" widh="100" height="100"></td>
-         <td> 
-            <hr>
-            <h1> Taieb ben khadhra  </h1>
-         </td>
-         </tr>
+            <tr>
+                <td><img src="image/tayeb.png" width="100" height="100"></td>
+                <td>
+                    <hr>
+                    <h1> Taieb ben khadhra </h1>
+                </td>
+            </tr>
         </table>
         <nav>
             <ul>
-                <li><a href ="accueil.html" style="color: rgb(51, 141, 214);">accueil</a></li>
-            <li><a href ="parcours.html" style="color: rgb(51, 141, 214);">parcours academiques</a></li>
-    <li>   <a href ="contact.html" style="color: rgb(51, 141, 214);">contact</a></li>
-                
+                <li><a href="accueil.html" style="color: rgb(51, 141, 214);">accueil</a></li>
+                <li><a href="parcours.html" style="color: rgb(51, 141, 214);">parcours academiques</a></li>
+                <li><a href="contact.html" style="color: rgb(51, 141, 214);">contact</a></li>
+                <li><a href="portfolio.html" style="color: rgb(51, 141, 214);">portfolio</a></li>
             </ul>
         </nav>
         <h2>
@@ -122,26 +122,42 @@
         </h2>
         <table>
             <p>
-            -lycée secondaire EL AHD EL JADID SKHIRA : Bac Math
+                - Lycée secondaire EL AHD EL JADID SKHIRA : Bac Math
             </p>
             <hr>
             <table>
-                <tr>   
-            <td><img src="ipeig.jpg" widh="100" height="100"></td>
+                <tr>
+                    <td><img src="ipeig.jpg" width="100" height="100"></td>
                 </tr>
-            </table>        
+            </table>
             <p>
-            -Institue prepartoire au étude d'ingénieur de Gabes
-        </p>
-        <hr>
+                - Institut prepartoire au étude d'ingénieur de Gabes
+            </p>
+            <hr>
             <table>
-                <tr>   
-            <td><img src="esprit.jpg" widh="100" height="100"></td>
+                <tr>
+                    <td><img src="esprit.jpg" width="100" height="100"></td>
                 </tr>
-            </table>   
-        <p>
-            -ecole superieur privee d'ingenieurie et de technologies tunisiennes
-        </p>
+            </table>
+            <p>
+                - Ecole superieur privee d'ingenieurie et de technologies tunisiennes
+            </p>
         </table>
 
+        <!-- Button to toggle the visibility of the academic section -->
+        <button onclick="toggleAcademicSection()">Toggle Academic Section</button>
 
+        <script>
+            
+            function toggleAcademicSection() {
+                var academicSection = document.getElementById("academicSection");
+                if (academicSection.style.display === "none" || academicSection.style.display === "") {
+                    academicSection.style.display = "block";
+                } else {
+                    academicSection.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+
+    </html>
